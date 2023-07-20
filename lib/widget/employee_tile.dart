@@ -10,12 +10,23 @@ class EmployeeTile extends StatelessWidget {
   Widget build(BuildContext context) {
        return Card(
       child: ListTile(
-        leading: CircleAvatar(
-          child: CachedNetworkImage(
-            imageUrl: (employee.profileImage),
-            fit: BoxFit.cover,
-          ),
-        ),
+        leading: //CircleAvatar(
+
+
+            CircleAvatar(
+              radius: 30.0,
+              backgroundImage:
+              NetworkImage(employee.profileImage),
+              backgroundColor: Colors.transparent,
+            ),
+
+
+          //   child: CachedNetworkImage(
+          //     imageUrl: (employee.profileImage),
+          //     fit: BoxFit.cover,
+          //   ),
+          // ),
+
         title: Text(employee.name),
         subtitle: Text(employee.email),
       ),
