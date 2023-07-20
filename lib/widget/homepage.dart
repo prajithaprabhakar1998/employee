@@ -1,7 +1,6 @@
 import 'package:employee/controller/employee_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'employee_tile.dart';
 
 void main(){

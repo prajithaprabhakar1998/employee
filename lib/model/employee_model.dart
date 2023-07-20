@@ -11,7 +11,7 @@ int? id;
 String? name;
 String? username;
 String? email;
-final Image? profileImage;
+String? profileImage;
 Address? address;
 String? phone;
 String? website;
@@ -34,7 +34,7 @@ id: json["id"],
 name: json["name"],
 username: json["username"],
 email: json["email"],
-profileImage: json["profile_image"],
+profileImage: json["profile_image"]==null?"https://randomuser.me/api/portraits/men/1.jpg":json["profile_image"],
 address: Address.fromJson(json["address"]),
 phone: json["phone"],
 website: json["website"],
